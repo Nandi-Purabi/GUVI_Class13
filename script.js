@@ -76,7 +76,7 @@ function weather(id){
     var name = document.getElementById("h4_"+id).innerText;
     var cap = document.getElementById("cap_"+id).innerText.substr(10);
     document.getElementById("title").innerText=name;
-    var url=`http://api.openweathermap.org/data/2.5/weather?q=${cap},${id}&APPID=d7603b75db0fbdb7e9a6cb99813ed5ca`;
+    var url=`https://api.openweathermap.org/data/2.5/weather?q=${cap},${id}&APPID=d7603b75db0fbdb7e9a6cb99813ed5ca`;
     fetch(url)
     .then(function(data){
         return data.json();
